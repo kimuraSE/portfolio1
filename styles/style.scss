@@ -1,0 +1,12 @@
+@media (max-width:480px){
+    @import "mobile/mobile";
+    @import "mobile/swiper1";
+    @import "mobile/swiper2";
+    
+}
+
+@media (min-width:481px){
+    @import "desktop/desktop";
+    @import "desktop/swiper1";
+    @import "desktop/swiper2";
+}

@@ -1,0 +1,84 @@
+.swiper-2{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+
+    .swiper-wrapper-2{
+            
+            width: 100%;
+
+            .swiper-slide-2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .swiper-slide-2-img-box{
+
+                    width: 350px;
+                    height: 350px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+                    
+
+                    & img{
+                        cursor: pointer;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.3s;
+                        position: relative;
+
+                       
+
+                        &:hover{
+                            transform: scale(1.3);
+                        }
+                    }
+
+                    .swiper-slide-2-img-box-cover{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: black;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.1s;
+                        
+                    }
+
+
+                    &:hover{
+                        
+    
+                            & img{
+                                transform: scale(1.3);
+                            }
+                        
+                        & .swiper-slide-2-img-box-cover{
+                            visibility: visible !important;
+                            opacity: 0.3 !important;
+                            z-index: 2;
+                        }
+
+                    }
+                }
+
+            }
+    }
+
+    .swiper-pagination-2{
+        position: absolute;
+        top: 110%;
+        left: 0;
+    }
+    .swiper-pagination-bullet{
+        background-color: black;
+        transform: scale(0.8);
+    }
+}
